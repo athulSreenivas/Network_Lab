@@ -1,0 +1,176 @@
+
+<html>
+		<head>
+		<title>CHN22MCA2017</title>
+		</head>
+
+		<style>
+	
+			
+h1{
+  font-size: 30px;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 300;
+  text-align: center;
+  margin-bottom: 15px;
+}
+table{
+  width:100%;
+  table-layout: fixed;
+}
+.tbl-header{
+  background-color: rgba(255,255,255,0.3);
+ }
+.tbl-content{
+  height:300px;
+  overflow-x:auto;
+  margin-top: 0px;
+  border: 1px solid rgba(255,255,255,0.3);
+}
+th{
+  padding: 20px 15px;
+  text-align: left;
+  font-weight: 500;
+  font-size: 12px;
+  color: #fff;
+  text-transform: uppercase;
+}
+td{
+  padding: 15px;
+  text-align: left;
+  vertical-align:middle;
+  font-weight: 300;
+  font-size: 12px;
+  color: #fff;
+  border-bottom: solid 1px rgba(255,255,255,0.1);
+}
+
+
+/* demo styles */
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,300,700);
+body{
+  background: -webkit-linear-gradient(left, #25c481, #25b7c4);
+  background: linear-gradient(to right, #25c481, #25b7c4);
+  font-family: 'Roboto', sans-serif;
+}
+section{
+  margin: 50px;
+}
+
+
+/* follow me template */
+.made-with-love {
+  margin-top: 40px;
+  padding: 10px;
+  clear: left;
+  text-align: center;
+  font-size: 10px;
+  font-family: arial;
+  color: #fff;
+}
+.made-with-love i {
+  font-style: normal;
+  color: #F50057;
+  font-size: 14px;
+  position: relative;
+  top: 2px;
+}
+.made-with-love a {
+  color: #fff;
+  text-decoration: none;
+}
+.made-with-love a:hover {
+  text-decoration: underline;
+}
+
+
+/* for custom scrollbar for webkit browser*/
+
+::-webkit-scrollbar {
+    width: 6px;
+} 
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+} 
+::-webkit-scrollbar-thumb {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+}
+
+
+.button {
+   display: inline-block;
+   padding: 6px 6px;
+   font-size: 14px;
+   text-decoration: none;
+   border: 1px solid rgba(255, 255, 255, 0.5);
+   border-radius: 3px;
+   color: #fff !important;
+   vertical-align: baseline;
+   text-align: left;
+   background: transparent;
+   line-height: 1;
+}
+.button:hover {
+   background: rgba(255, 255, 255, 0.3);
+}
+
+		
+		</style>
+	<body>
+		
+<h1>CHN22MCA2017</h1>
+
+ <div class="tbl-header">
+
+		<table cellpadding="0" cellspacing="0" border="0">
+			<thead>
+				<tr>
+					<th>SL NO</th><th>Topic</th><th>Link</th>
+				</tr>
+			<thead>
+			
+ </table>
+  </div>
+
+ <div class="tbl-content">
+    <table cellpadding="0" cellspacing="0" border="0">
+
+<tbody>
+				<tr>
+					<td>1</td><td>Experiment No1</td><td><a class="button js-button" href="./NSA.pdf" target="_blank">EXP_1</a></td>
+				<tr>
+
+			<tr>
+					<td>2</td><td>Experiment No 2</td><td><a class="button js-button" href="./experiments_2.docx" target="_blank">EXP_2</a></td>
+				<tr>
+
+<tr>
+					<td>3</td><td>Experiment No 3</td><td><a class="button js-button" href="./lab3.pdf" target="_blank">EXP_3</a></td> 
+				<tr>
+
+				<tr>
+					<td>4</td><td>Experiment No 4 (Basic Shell)</td><td><a class="button js-button" href="./lab4.pdf" target="_blank">EXP_4</a></td> 
+				<tr>
+
+<tr>
+					<td>5</td><td>Experiment No 5 (Basic Pgms)</td><td><a class="button js-button" href="./lab5.pdf" target="_blank">EXP_5</a></td> 
+				<tr>
+
+			</tbody>
+			</tbody>
+
+		</table>
+</div>
+	</body>
+</html>
+
+<script>
+	
+
+$(window).on("load resize ", function() {
+  var scrollWidth = $('.tbl-content').width() - $('.tbl-content table').width();
+  $('.tbl-header').css({'padding-right':scrollWidth});
+}).resize();
+</script>
